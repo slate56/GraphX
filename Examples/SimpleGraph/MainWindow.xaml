@@ -27,5 +27,9 @@
                 </Button>
             </StackPanel>
         </DockPanel>
+        <controls:ViewFinderDisplay HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+        <controls:ViewFinderDisplay HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+        <controls:VertexLabelControl Content="VertexLabelControl" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <controls:StaticVertexConnectionPoint/>
     </Grid>
 </Window>

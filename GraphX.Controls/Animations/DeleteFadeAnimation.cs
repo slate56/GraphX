@@ -24,7 +24,7 @@ namespace GraphX.Controls.Animations
             //create and run animation
             var story = new Storyboard();
             var fadeAnimation = new DoubleAnimation {Duration = new Duration(TimeSpan.FromSeconds(Duration)), FillBehavior = FillBehavior.Stop, From = 1, To = 0};
-            fadeAnimation.SetDesiredFrameRate(30);
+            //fadeAnimation.SetDesiredFrameRate(30);
             fadeAnimation.Completed += (sender, e) => OnCompleted(target, removeDataObject);
             story.Children.Add(fadeAnimation);
             Storyboard.SetTarget(fadeAnimation, target as FrameworkElement);

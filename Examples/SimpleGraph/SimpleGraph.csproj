@@ -74,20 +74,20 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="QuickGraph">
-      <HintPath>..\..\packages\QuickGraphPCL.3.6.61114.2\lib\net40-client\QuickGraph.dll</HintPath>
+    <Reference Include="QuickGraph, Version=3.6.61114.0, Culture=neutral, PublicKeyToken=f3fb40175eec2af3, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="QuickGraph.Data">
-      <HintPath>..\..\packages\QuickGraphPCL.3.6.61114.2\lib\net40-client\QuickGraph.Data.dll</HintPath>
+    <Reference Include="QuickGraph.Data, Version=3.6.61114.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.Data.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="QuickGraph.Graphviz">
-      <HintPath>..\..\packages\QuickGraphPCL.3.6.61114.2\lib\net40-client\QuickGraph.Graphviz.dll</HintPath>
+    <Reference Include="QuickGraph.Graphviz, Version=3.6.61114.0, Culture=neutral, PublicKeyToken=f3fb40175eec2af3, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.Graphviz.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="QuickGraph.Serialization">
-      <HintPath>..\..\packages\QuickGraphPCL.3.6.61114.2\lib\net40-client\QuickGraph.Serialization.dll</HintPath>
+    <Reference Include="QuickGraph.Serialization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.Serialization.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -145,6 +145,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bower.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -165,20 +166,6 @@
     <Resource Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\GraphX.Controls\GraphX.WPF.Controls.csproj">
-      <Project>{d2e33fee-6689-4bb4-a95c-1b5c327a1e8f}</Project>
-      <Name>GraphX.WPF.Controls</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\GraphX.PCL.Common\GraphX.PCL.Common.csproj">
-      <Project>{3644d44b-dec0-4b65-bba0-c68e34821aae}</Project>
-      <Name>GraphX.PCL.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\GraphX.PCL.Logic\GraphX.PCL.Logic.csproj">
-      <Project>{a30d218b-aaa4-483a-99f7-eaeb1b8b4610}</Project>
-      <Name>GraphX.PCL.Logic</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
@@ -194,6 +181,20 @@
       <ProductName>Windows Installer 4.5</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GraphX.Controls\GraphX.WPF.Controls.csproj">
+      <Project>{d2e33fee-6689-4bb4-a95c-1b5c327a1e8f}</Project>
+      <Name>GraphX.WPF.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GraphX.PCL.Common\GraphX.PCL.Common.csproj">
+      <Project>{3644d44b-dec0-4b65-bba0-c68e34821aae}</Project>
+      <Name>GraphX.PCL.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GraphX.PCL.Logic\GraphX.PCL.Logic.csproj">
+      <Project>{a30d218b-aaa4-483a-99f7-eaeb1b8b4610}</Project>
+      <Name>GraphX.PCL.Logic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

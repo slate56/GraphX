@@ -105,7 +105,7 @@ namespace GraphX.Controls.Animations
                 To = end,
                 Duration = new Duration(Duration)
             };
-            fadeAnimation.SetDesiredFrameRate(30);
+            //fadeAnimation.SetDesiredFrameRate(30);
             if (callback != null) story.Completed += callback;
             story.Children.Add(fadeAnimation);
             Storyboard.SetTarget(fadeAnimation, control);
