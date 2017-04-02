@@ -71,7 +71,7 @@ namespace WindowsFormsProject
             var dataGraph = new GraphExample();
             for (int i = 1; i < 10; i++)
             {
-                var dataVertex = new DataVertex("MyVertex " + i);
+                var dataVertex = new DataVertex("Node " + i);
                 dataGraph.AddVertex(dataVertex);
             }
             var vlist = dataGraph.Vertices.ToList();
