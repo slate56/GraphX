@@ -129,8 +129,6 @@ namespace GraphX.Controls
                 surface.SetPrintMode(false, true, 100);
         }
 
-
-
         public static void PrintVisualDialog(Visual surface, string description = "", bool compat = false)
         {
             try
