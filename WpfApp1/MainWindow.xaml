@@ -6,4 +6,6 @@
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:graphx="http://schemas.panthernet.ru/graphx/" x:Class="WpfApp1.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Width="750"/>
+        Title="MainWindow" Width="750">
+    <Button Content="Button" HorizontalAlignment="Left" Margin="114,0,0,347.6" VerticalAlignment="Bottom" Width="208" Height="47" RenderTransformOrigin="0.505,0.532" Click="Button_Click"/>
+</Window>
