@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.12
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{D9664367-2C2C-46B2-81A6-26CDCD087B29}"
 EndProject
@@ -36,7 +36,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowcaseApp.WPF", "Examples
 		{D2E33FEE-6689-4BB4-A95C-1B5C327A1E8F} = {D2E33FEE-6689-4BB4-A95C-1B5C327A1E8F}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{F276E140-EF6D-4BCB-B300-3ECED107ECBB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBrain", "WpfApp1\MyBrain.csproj", "{F276E140-EF6D-4BCB-B300-3ECED107ECBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

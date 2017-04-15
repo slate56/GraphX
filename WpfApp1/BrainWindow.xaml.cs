@@ -29,5 +29,10 @@ namespace WpfApp1
         {
             MessageBox.Show("hahah");
         }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+
+        }
     }
 }
